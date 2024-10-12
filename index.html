@@ -5,38 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="public/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="bg-gray-100">
     <div class="container mx-auto flex justify-between items-center py-4">
       <div class="flex items-center space-x-4">
-        <img class="w-12 h-12 object-cover rounded-full" src="./img/photo_2024-10-10_21-05-37.jpg" alt="типа фото">
+        <img class="w-12 h-12 object-cover rounded-full" src="./img/Jesus.jpg" alt="типа фото">
         <h1 class="text-4xl font-bold">Simon's Services</h1>
       </div>
       <nav>
         <ul class="flex space-x-4">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" class="hover:text-blue-500 hover:">Privacy Policy</a></li>
+          <li><a href="#" class="no-underline py-2 hover:border-b-2 transition duration-300 border-blue-600 hover:text-blue-500 font-bold">About Us</a></li>
+          <li><a href="#" class="no-underline py-2 hover:border-b-2 transition duration-300 border-blue-600 hover:text-blue-500 font-bold">Services</a></li>
+          <li><a href="#" class="no-underline py-2 hover:border-b-2 transition duration-300 border-blue-600 hover:text-blue-500 font-bold">Contact</a></li>
+          <li><a href="#" class="no-underline py-2 hover:border-b-2 transition duration-300 border-blue-600 hover:text-blue-500 font-bold">Privacy Policy</a></li>
         </ul>
       </nav>
       <input type="text" placeholder="Search..." class="border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
     </div>
   </header>
+
+  <!-- <section class="container mx-auto py-8">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/2">
+        <img src="/img/Jesus.jpg" alt="">
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <p>Это сайт про услуги банды Серафима для игры на разных инструментах</p>
+      </div>
+    </div>
+  </section> -->
+
   <section class="container mx-auto py-8">
-    <div class="max-w-sm bg-white shadow-xl rounded-lg overflow-hidden border border-red-600">
-      <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Типа картинка">
-      <div class="p-4">
-        <h2 class="text-2xl font-bold to-gray-800">Product Title</h2>
-        <p class="text-gray-600 mt-2">This is a brief description of the product. It gives an overview of its key features and benefits.</p>
-        <div class="flex items-center justify-between mt-4">
-          <span>$999.99</span>
-          <button>Add to Cart</button>
+    <div class="flex justify-between gap-4">
+
+      <div class="max-w-sm bg-white shadow-xl rounded-lg overflow-hidden border border-red-600 hover:-translate-y-2 transition duration-500">
+        <img class="border-b-2 w-full h-48 object-cover" src="/img/drams.jpg" alt="Типа картинка">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold to-gray-800">Поиграть на барабанах</h2>
+          <p class="text-gray-600 mt-2">Типа поиграть на барабанах (наверное). аывфывыф</p>
+          <div class="flex items-center justify-between mt-4">
+            <span>$999.99</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="shadow-xl p-4">
+          <a href="#" class="mt-4 p-2 border-2 border-spacing-4 rounded-md font-bold bg-blue-600 text-white hover:bg-white hover:text-blue-600 transition duration-300">Заказать услугу</a>
         </div>
       </div>
-      <div class="p-4">
-        <a href="#" class="mt-4 p-2 border border-spacing-4 border-black rounded-md font-bold bg-blue-600 text-white hover:bg-white hover:text-blue-600">Заказать услугу</a>
+
+      <div class="max-w-sm bg-white shadow-xl rounded-lg overflow-hidden border border-red-600 hover:-translate-y-2 transition duration-500">
+        <img class="w-full h-48 object-cover" src="/img/electric_guitar.png" alt="Типа картинка">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold to-gray-800">Поиграть на электрогитаре</h2>
+          <p class="text-gray-600 mt-2">This is a brief description of the product. It gives an overview of its key features and benefits.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span>$999.99</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="p-4">
+          <a href="#" class="mt-4 p-2 border-2 border-spacing-4 rounded-md font-bold bg-blue-600 text-white hover:bg-white hover:text-blue-600 transition duration-300">Заказать услугу</a>
+        </div>
+      </div>
+
+      <div class="max-w-sm bg-white shadow-xl rounded-lg overflow-hidden border border-red-600 hover:-translate-y-2 transition duration-500">
+        <img class="w-full h-48 object-cover" src="/img/piano.jpg" alt="Типа картинка">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold to-gray-800">Поиграть на пианино</h2>
+          <p class="text-gray-600 mt-2">This is a brief description of the product. It gives an overview of its key features and benefits.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span>$999.99</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="p-4">
+          <a href="#" class="mt-4 p-2 border-2 border-spacing-4 rounded-md font-bold bg-blue-600 text-white hover:bg-white hover:text-blue-600 transition duration-300">Заказать услугу</a>
+        </div>
+      </div>
+
+      <div class="max-w-sm bg-white shadow-xl rounded-lg overflow-hidden border border-red-600 hover:-translate-y-2 transition duration-500">
+        <img class="w-full h-48 object-cover" src="/img/tuba.jpg" alt="Типа картинка">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold to-gray-800">Поиграть на тубе</h2>
+          <p class="text-gray-600 mt-2">This is a brief description of the product. It gives an overview of its key features and benefits.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span>$999.99</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="p-4">
+          <a href="#" class="mt-4 p-2 border-2 border-spacing-4 rounded-md font-bold bg-blue-600 text-white hover:bg-white hover:text-blue-600 transition duration-300">Заказать услугу</a>
+        </div>
       </div>
     </div>
   </section>
@@ -140,7 +202,37 @@
           </svg>
         </a>
       </div>
+
     </div>
+
+    <div class="container mx-auto flex justify-between items-center mt-4">
+      <div>
+        <p>О нас</p>
+        <p>Этот сайт создавался при поддержке:</p>
+        <ul>
+          <li>
+            <a href="#" class="me-2">@DED_SIMON</a>
+            <span> | </span>
+            <a href="#" class="ms-2"><i class="fa-brands fa-telegram"></i></a>
+          </li>
+          <li>
+            <a href="#">@nastuaiiis</a>
+          </li>
+          <li>
+            <a href="#">@evixxwff</a>
+          </li>
+          <li>
+            <a href="#">@hahahahahahahhhaa</a>
+          </li>
+          <li>
+            <a href="#">@Gimnuchelo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </footer>
+
+  <script src="https://kit.fontawesome.com/19fad21f3d.js" crossorigin="anonymous"></script>
 </body>
 </html>
